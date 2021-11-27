@@ -1,0 +1,152 @@
+- request:
+    method: GET
+    path: /users
+  response:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: >
+      [
+        {
+          "tipo": "Prestador",
+          "plano": "N/A",
+          "categoria": "N/A",
+          "nome": "Leandro Silva",
+          "cargo": "Médico",
+          "telefone": "(11) 9.1234-5678",
+          "localizacao": "-73.542072, -46.649883",
+          "formacao": "Medicina"
+        },
+        {
+          "tipo": "Prestador",
+          "plano": "N/A",
+          "categoria": "N/A",
+          "nome": "Laura Prado",
+          "cargo": "Enfermeiro",
+          "telefone": "(11) 9.8745-1547",
+          "localizacao": "-53.541472, -46.649483",
+          "formacao": "Enfermagem"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "N/A",
+          "categoria": "Ativo",
+          "nome": "Klara Carneiro",
+          "cargo": "Arquiteto",
+          "telefone": "(11) 9.9874-6541",
+          "localizacao": "-15.987372, -41.417748",
+          "formacao": "Arquitetura"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "Individual",
+          "categoria": "Ativo",
+          "nome": "Marcelo Vasquez",
+          "cargo": "Analista",
+          "telefone": "(11) 9.5421-8742",
+          "localizacao": "-43.547472, -76.649483",
+          "formacao": "Ciência da Computação"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "Empresarial",
+          "categoria": "Suspenso",
+          "nome": "Marta Viegas",
+          "cargo": "Advogado",
+          "telefone": "(11) 9.4975-1297",
+          "localizacao": "-54.547472, -54.649441",
+          "formacao": "Direito"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "Individual",
+          "categoria": "Inativo",
+          "nome": "Gonçalo Morgado",
+          "cargo": "Engenheiro",
+          "telefone": "(11) 9.1427-3253",
+          "localizacao": "-17.374472, -56.687741",
+          "formacao": "Engenharia"
+        }
+      ]
+
+- request:
+    method: GET
+    path: /users/tipo/prestador
+  response:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: >
+      [
+        {
+          "tipo": "Prestador",
+          "plano": "N/A",
+          "categoria": "N/A",
+          "nome": "Leandro Silva",
+          "cargo": "Médico",
+          "telefone": "(11) 9.1234-5678",
+          "localizacao": "-73.542072, -46.649883",
+          "formacao": "Medicina"
+        },
+        {
+          "tipo": "Prestador",
+          "plano": "N/A",
+          "categoria": "N/A",
+          "nome": "Laura Prado",
+          "cargo": "Enfermeiro",
+          "telefone": "(11) 9.8745-1547",
+          "localizacao": "-53.541472, -46.649483",
+          "formacao": "Enfermagem"
+        }
+      ]
+
+- request:
+    method: GET
+    path: /users/tipo/associado
+  response:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: >
+      [
+        {
+          "tipo": "Associado",
+          "plano": "Individual",
+          "categoria": "Ativo",
+          "nome": "Marcelo Vasquez",
+          "cargo": "Analista",
+          "telefone": "(11) 9.5421-8742",
+          "localizacao": "-43.547472, -76.649483",
+          "formacao": "Ciência da Computação"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "Empresarial",
+          "categoria": "Suspenso",
+          "nome": "Marta Viegas",
+          "cargo": "Advogado",
+          "telefone": "(11) 9.4975-1297",
+          "localizacao": "-54.547472, -54.649441",
+          "formacao": "Direito"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "Individual",
+          "categoria": "Inativo",
+          "nome": "Gonçalo Morgado",
+          "cargo": "Engenheiro",
+          "telefone": "(11) 9.1427-3253",
+          "localizacao": "-17.374472, -56.687741",
+          "formacao": "Engenharia"
+        },
+        {
+          "tipo": "Associado",
+          "plano": "N/A",
+          "categoria": "Ativo",
+          "nome": "Klara Carneiro",
+          "cargo": "Arquiteto",
+          "telefone": "(11) 9.9874-6541",
+          "localizacao": "-15.987372, -41.417748",
+          "formacao": "Arquitetura"
+        }
+      ]

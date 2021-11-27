@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "ba8f0e53-c431-4d3d-b9a7-835c347f517f",
+		"name": "Smocker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/tipo/associado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"tipo",
+						"associado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/reset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-mocks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-yaml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "- request:\r\n    method: GET\r\n    path: /users\r\n  response:\r\n    status: 200\r\n    headers:\r\n      Content-Type: application/json\r\n    body: >\r\n      [\r\n        {\r\n          \"tipo\": \"Prestador\",\r\n          \"plano\": \"N/A\",\r\n          \"categoria\": \"N/A\",\r\n          \"nome\": \"Leandro Silva\",\r\n          \"cargo\": \"Médico\",\r\n          \"telefone\": \"(11) 9.1234-5678\",\r\n          \"localizacao\": \"-73.542072, -46.649883\",\r\n          \"formacao\": \"Medicina\"\r\n        },\r\n        {\r\n          \"tipo\": \"Prestador\",\r\n          \"plano\": \"N/A\",\r\n          \"categoria\": \"N/A\",\r\n          \"nome\": \"Laura Prado\",\r\n          \"cargo\": \"Enfermeiro\",\r\n          \"telefone\": \"(11) 9.8745-1547\",\r\n          \"localizacao\": \"-53.541472, -46.649483\",\r\n          \"formacao\": \"Enfermagem\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"N/A\",\r\n          \"categoria\": \"Ativo\",\r\n          \"nome\": \"Klara Carneiro\",\r\n          \"cargo\": \"Arquiteto\",\r\n          \"telefone\": \"(11) 9.9874-6541\",\r\n          \"localizacao\": \"-15.987372, -41.417748\",\r\n          \"formacao\": \"Arquitetura\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"Individual\",\r\n          \"categoria\": \"Ativo\",\r\n          \"nome\": \"Marcelo Vasquez\",\r\n          \"cargo\": \"Analista\",\r\n          \"telefone\": \"(11) 9.5421-8742\",\r\n          \"localizacao\": \"-43.547472, -76.649483\",\r\n          \"formacao\": \"Ciência da Computação\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"Empresarial\",\r\n          \"categoria\": \"Suspenso\",\r\n          \"nome\": \"Marta Viegas\",\r\n          \"cargo\": \"Advogado\",\r\n          \"telefone\": \"(11) 9.4975-1297\",\r\n          \"localizacao\": \"-54.547472, -54.649441\",\r\n          \"formacao\": \"Direito\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"Individual\",\r\n          \"categoria\": \"Inativo\",\r\n          \"nome\": \"Gonçalo Morgado\",\r\n          \"cargo\": \"Engenheiro\",\r\n          \"telefone\": \"(11) 9.1427-3253\",\r\n          \"localizacao\": \"-17.374472, -56.687741\",\r\n          \"formacao\": \"Engenharia\"\r\n        }\r\n      ]\r\n\r\n- request:\r\n    method: GET\r\n    path: /users/tipo/prestador\r\n  response:\r\n    status: 200\r\n    headers:\r\n      Content-Type: application/json\r\n    body: >\r\n      [\r\n        {\r\n          \"tipo\": \"Prestador\",\r\n          \"plano\": \"N/A\",\r\n          \"categoria\": \"N/A\",\r\n          \"nome\": \"Leandro Silva\",\r\n          \"cargo\": \"Médico\",\r\n          \"telefone\": \"(11) 9.1234-5678\",\r\n          \"localizacao\": \"-73.542072, -46.649883\",\r\n          \"formacao\": \"Medicina\"\r\n        },\r\n        {\r\n          \"tipo\": \"Prestador\",\r\n          \"plano\": \"N/A\",\r\n          \"categoria\": \"N/A\",\r\n          \"nome\": \"Laura Prado\",\r\n          \"cargo\": \"Enfermeiro\",\r\n          \"telefone\": \"(11) 9.8745-1547\",\r\n          \"localizacao\": \"-53.541472, -46.649483\",\r\n          \"formacao\": \"Enfermagem\"\r\n        }\r\n      ]\r\n\r\n- request:\r\n    method: GET\r\n    path: /users/tipo/associado\r\n  response:\r\n    status: 200\r\n    headers:\r\n      Content-Type: application/json\r\n    body: >\r\n      [\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"Individual\",\r\n          \"categoria\": \"Ativo\",\r\n          \"nome\": \"Marcelo Vasquez\",\r\n          \"cargo\": \"Analista\",\r\n          \"telefone\": \"(11) 9.5421-8742\",\r\n          \"localizacao\": \"-43.547472, -76.649483\",\r\n          \"formacao\": \"Ciência da Computação\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"Empresarial\",\r\n          \"categoria\": \"Suspenso\",\r\n          \"nome\": \"Marta Viegas\",\r\n          \"cargo\": \"Advogado\",\r\n          \"telefone\": \"(11) 9.4975-1297\",\r\n          \"localizacao\": \"-54.547472, -54.649441\",\r\n          \"formacao\": \"Direito\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"Individual\",\r\n          \"categoria\": \"Inativo\",\r\n          \"nome\": \"Gonçalo Morgado\",\r\n          \"cargo\": \"Engenheiro\",\r\n          \"telefone\": \"(11) 9.1427-3253\",\r\n          \"localizacao\": \"-17.374472, -56.687741\",\r\n          \"formacao\": \"Engenharia\"\r\n        },\r\n        {\r\n          \"tipo\": \"Associado\",\r\n          \"plano\": \"N/A\",\r\n          \"categoria\": \"Ativo\",\r\n          \"nome\": \"Klara Carneiro\",\r\n          \"cargo\": \"Arquiteto\",\r\n          \"telefone\": \"(11) 9.9874-6541\",\r\n          \"localizacao\": \"-15.987372, -41.417748\",\r\n          \"formacao\": \"Arquitetura\"\r\n        }\r\n      ]"
+				},
+				"url": {
+					"raw": "http://localhost:8081/mocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"mocks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
