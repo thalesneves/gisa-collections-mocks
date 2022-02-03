@@ -65,7 +65,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzczNjgwOTQsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiZjc4ZGFlOWUtNDMyMi00NzFiLWFjOGUtM2QwNzFmOTRmMDk4IiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.WafVtn7dE3ddNRIoQIU7Vr2t5-CiEqYVPRSBB6Vj9IU",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDM4NTE3NDQsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiZGNkYTQ5MjEtOWViMC00MmUwLTk5ZWYtMjFmYmM5Yzk3NDdmIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.ow74Wxqd1J9jQn294zw-eBvQP8iK2y_IqwlIUJHuWLk",
 							"type": "string"
 						}
 					]
@@ -82,6 +82,45 @@
 					"path": [
 						"infocadastral",
 						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comunicacao-legado-service",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDM4NTE4OTgsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiYjE0Njg1MTktNjQ4Ny00MWMwLWJiYjEtMDYwMTRkZjQ1YTM5IiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.SnjfiQzKhI1DJJS7hLa6Ol0jJVg7uzXrXh5tu1Gno_4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"Prestador\",\r\n    \"plano\": \"N/A\",\r\n    \"categoria\": \"N/A\",\r\n    \"nome\": \"Teste\",\r\n    \"cargo\": \"Fisioterapeuta\",\r\n    \"telefone\": \"(11) 9.1458-8790\",\r\n    \"localizacao\": \"-53.542072, -44.649883\",\r\n    \"formacao\": \"Saúde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/comunicacaolegado/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"comunicacaolegado",
+						"user"
 					]
 				}
 			},
