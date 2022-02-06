@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "e0a195c4-59c1-4300-89d3-7ec1b3ff9e98",
+		"name": "comunicacao-legado-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "comunicacao-legado-service",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDM5NDA3ODksInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiNzI1YzIxMGQtNDc1My00YTRiLTk4NTEtYzgzNzljMTcxMTEwIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.lCceKMlQFQHGgoDyRTMaBO8zVGZ2lJr1D5_1ZAkbPS0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"Associado\",\r\n    \"plano\": \"N/A\",\r\n    \"categoria\": \"N/A\",\r\n    \"nome\": \"Lucas Silva\",\r\n    \"cargo\": \"Médico\",\r\n    \"telefone\": \"(11) 9.1458-8790\",\r\n    \"localizacao\": \"-53.542072, -44.649883\",\r\n    \"formacao\": \"Medicina\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/comunicacaolegado/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"comunicacaolegado",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "e4881671-1c1c-4236-9721-0b61221a02ff",
+		"name": "info-cadastral-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all-users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDQxMjY2NzYsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiMmU4NzlkY2QtOGU1Zi00N2I4LTgyY2ItMzE1Nzg0ZjQ4YTM4IiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.Tkgc1Wn81MrfFrgtPIxOFqWolEm7tSoIPfDDTkXpAIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users-prestador",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDM5NDEyMzQsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiZDMyNDQ2YjYtMjNlYS00MGM1LTlhZmMtOGYxYTI0NTk5NDgwIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.tOgKIkzKg1o69fbLLaMXmzeJpf9JDWkPL96AAFhQTfM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/users/prestador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"users",
+						"prestador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users-associado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDM5NDA3ODksInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiNzI1YzIxMGQtNDc1My00YTRiLTk4NTEtYzgzNzljMTcxMTEwIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.lCceKMlQFQHGgoDyRTMaBO8zVGZ2lJr1D5_1ZAkbPS0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/users/associado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"users",
+						"associado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter-cargo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDM5NDIwOTEsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiMWI0NDM2MTQtYWIzNC00NWExLWFiNjAtZGVjZGZjNzdhNWRmIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.DvEiU2fXsXw0jdbL1IQbKLcWXG89VsRy_JmHiQY4L8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/users/filter?cargo=m",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"users",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "cargo",
+							"value": "m"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDQxMjU5MjUsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiNzViMGI3OGEtY2ZiYS00MGU1LWFhZDAtYjc2ZWQ1NTExNzVmIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.US4_LoeLOV1mCs3s_lZXjAQ3wFRvZr6Ertl6kHAnzhk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"Prestador\",\r\n    \"plano\": \"N/A\",\r\n    \"categoria\": \"N/A\",\r\n    \"nome\": \"Teste\",\r\n    \"cargo\": \"Fisioterapeuta\",\r\n    \"telefone\": \"(11) 9.1458-8790\",\r\n    \"localizacao\": \"-53.542072, -44.649883\",\r\n    \"formacao\": \"Saúde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDQxMjU5MjUsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiNzViMGI3OGEtY2ZiYS00MGU1LWFhZDAtYjc2ZWQ1NTExNzVmIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.US4_LoeLOV1mCs3s_lZXjAQ3wFRvZr6Ertl6kHAnzhk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"Prestador\",\r\n    \"plano\": \"N/A\",\r\n    \"categoria\": \"N/A\",\r\n    \"nome\": \"Teste 123\",\r\n    \"cargo\": \"Fisioterapeuta\",\r\n    \"telefone\": \"(11) 9.1458-8790\",\r\n    \"localizacao\": \"-53.542072, -44.649883\",\r\n    \"formacao\": \"Saúde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/user/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"user",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDQxMjU5MjUsInVzZXJfbmFtZSI6ImFkbWluQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRlVMTF9BQ0NFU1MiXSwianRpIjoiNzViMGI3OGEtY2ZiYS00MGU1LWFhZDAtYjc2ZWQ1NTExNzVmIiwiY2xpZW50X2lkIjoiYW5ndWxhciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.US4_LoeLOV1mCs3s_lZXjAQ3wFRvZr6Ertl6kHAnzhk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/infocadastral/user/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"infocadastral",
+						"user",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
